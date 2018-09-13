@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="assets/img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<base href="/">
+		<!-- Site Title -->
+		<title>AbleToMeet</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="assets/css/nice-select.css">							
+		<link rel="stylesheet" href="assets/css/animate.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/instagram.min.css">
+		<link rel="stylesheet" href="assets/css/custom.css">
+		<link rel="stylesheet" href="assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">				
+		<link rel="stylesheet" href="assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+		<link rel="stylesheet" href="assets/plugins/Toastr-Plugin/build/toastr.css">
+
+		<!-- Video Conferencing JS
+		============================================= -->
+        <!-- capture screen from any HTTPs domain! -->
+        <script src="https://cdn.webrtc-experiment.com:443/getScreenId.js"></script>
+		<script src="./dist/RTCMultiConnection.js"></script>
+		<script src="https://cdn.webrtc-experiment.com/FileBufferReader.js"></script>
+        <!-- <script src="./dev/getScreenId.js"></script>
+		<script src="./dist/RTCMultiConnection.js"></script>
+		<script src="./dev/FileBufferReader.js"></script> -->
+
+		<!-- socket.io for signaling -->
+		<script src="./socket/socket.io.js"></script>
+		<!-- ==================================================================================== -->
+	</head>
+	<body class="meeting-room">
+		<div style="display: none;" id="current_user" data-value="{{currentUser.username}}">{{currentUser.username}}</div>
+		<div style="display: none;" id="isHost" data-value="{{isHost}}"></div>
+		<div style="display: none;" id="joinId" data-value="{{joinId}}"></div>
+		{{{ body }}}
+
+		<script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/vendor/bootstrap.min.js"></script>			
+		<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script> -->
+		<script src="js/glfx.js"></script>	
+		<script src="assets/js/easing.min.js"></script>			
+		<script src="assets/js/hoverIntent.js"></script>
+		<script src="assets/js/superfish.min.js"></script>	
+		<script src="assets/js/jquery.ajaxchimp.min.js"></script>
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>	
+		<script src="assets/js/jquery.tabs.min.js"></script>						
+		<script src="assets/js/jquery.nice-select.min.js"></script>	
+        <script src="assets/js/isotope.pkgd.min.js"></script>			
+		<script src="assets/js/waypoints.min.js"></script>
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/simple-skillbar.js"></script>							
+		<script src="assets/js/mail-script.js"></script>	
+		<script src="assets/js/main.js"></script>
+		<script src="assets/plugins/OwlCarousel2-2.3.4/src/js/owl.carousel.js"></script>							
+		<script src="assets/plugins/Toastr-Plugin/build/toastr.min.js"></script>
+		<script src="pages/meetingRoom.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>		
+	</body>
+</html>

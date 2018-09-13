@@ -413,6 +413,8 @@ var Login = {
 
         var userName = StorageCookie.getValue('userName');
         var roomName = Query.getRoomName();
+        // var roomName = "abcdefg9289821";
+
 
         if (userName !== null) {
             // @todo Verify that this doesn't introduce XSS
@@ -422,7 +424,7 @@ var Login = {
         if (roomName !== null) {
             _roomNameEntry
                 .val(roomName)
-                .prop('disabled', true);
+                .prop('disabled', false);
         } else {
             // No roomName was specified, to make it friendly to the user, generate one.
             // We don't set roomName because we want to make this field modifiable.

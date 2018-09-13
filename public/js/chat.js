@@ -260,7 +260,7 @@ var Chat = function(roomName) {
                 this._notify('Room Status', userName + ' (' + peerId + ') has entered the room');
             }
 
-            this._appendLine(content);
+            // this._appendLine(content);
         } else {
             ErrorMetric.log('Chat.userEntered => userEnter invoked without Chat.userName');
         }
@@ -448,8 +448,8 @@ var Chat = function(roomName) {
         this.sendMessage = sendMessageFn;
 
         // @todo FIXME: it would be cool to have some text here...
-        this.addNotification('Welcome! Feel free to use this to communicate.');
-        this.addNotification('To see a list of chatroom commands, type /help');
+        // this.addNotification('Welcome! Feel free to use this to communicate.');
+        // this.addNotification('To see a list of chatroom commands, type /help');
         this.userEntered(peerId, userName);
 
         // Used for detection of new lines in the chat text entry

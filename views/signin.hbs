@@ -1,0 +1,36 @@
+<style type="text/css">
+	.for-link:hover {
+		text-decoration: underline;
+	}
+</style>
+<!-- Start Join Page Area -->
+<section class="home-about-area pt-120 mt-30">
+	<div class="container">
+		<div class="row align-items-center justify-content-between">
+
+			<input type="hidden" value="{{ errMsg }}" id="errMsg" />	
+		
+			<div class="col-lg-4 col-md-5 home-about-right mb-100" style="margin-left: auto; margin-right: auto;">
+				<h1 class="text-uppercase" style="text-align: center;">Sign In</h1>
+				<form action="/auth/signin" method="post">
+				  	<div class="form-group pt-20">
+					    <input type="email" class="form-control" name="email" id="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" required="" style="height: 54px;">
+					</div>
+					<div class="form-group pt-20">
+					    <input type="password" class="form-control" name="password" id="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required="" style="height: 54px;">
+					</div>
+					<div class="form-group pt-20">
+						<button type="submit" class="form-control primary-btn text-uppercase">Sign In</button>
+					</div>
+				</form>
+				<hr>
+				<div class="form-group" style="text-align: center;">
+					Is this your first with AbleToMeet? <a href="/auth/signup" class="text-uppercase for-link">Sign up</a>
+				</div>
+				<div>
+			</div>
+		</div>
+	</div>	
+</section>
+
+<!-- End Join Page Area -->

@@ -14,7 +14,6 @@
  * Replaces all SVG images in the ".navBar" with inline SVGs that we
  * can style SVG elements using CSS.
  *
- * @see http://stackoverflow.com/questions/11978995/how-to-change-color-of-svg-image-using-css-jquery-svg-image-replacement)
  *
  * @param {Function} completionFn - A completion function to execute
  * after completion of SVG inlining.
